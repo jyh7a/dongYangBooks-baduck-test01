@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+table{
+	margin: 50px auto;
+	border-collapse: collapse;
+}
+
+td{
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	border: 1.5px solid #333333;
+	background: rgb(180, 142, 82);
+}
+
+td.white{
+	background: #fff;
+}
+
+td.black{
+	background: #000;
+}
+
+/*td.normal{
+	background: rgb(180, 142, 82);
+}*/
+
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 100px;
+}
+button{
+	margin-right: 100px
+}
