@@ -1,40 +1,150 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
-table{
-	margin: 50px auto;
+html,
+body {
+	height: 100%;
+}
+
+
+table {
 	border-collapse: collapse;
 }
 
-td{
+
+
+#table_1 td {
+	position: relative;
 	width: 40px;
 	min-width: 40px;
 	height: 40px;
-	border: 1.5px solid #333333;
-	background: rgb(180, 142, 82);
+	border-radius: 50%;
+	/* background: #ff0; */
 }
 
-td.white{
+#table_1 td.white {
+	/* background: #fff; */
+}
+
+#table_1 td.black {
+	/* background: #000; */
+}
+
+#table_1 td.white::after {
+	display: block;
+	content: '';
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	width: 98%;
+	min-width: 98%;
+	height: 98%;
+	border-radius: 50%;
 	background: #fff;
 }
 
-td.black{
+#table_1 td.black::after {
+	display: block;
+	content: '';
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	width: 98%;
+	min-width: 98%;
+	height: 98%;
+	border-radius: 50%;
 	background: #000;
+}
+
+#table_1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+#table_2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+#table_2 tr:nth-of-type(2) td {
+	/* border-top: 2px solid #333333; */
+}
+
+#table_2 tr td:nth-of-type(10) {
+	/* border-right: 2px solid #333333; */
+}
+
+#table_2 tr:nth-of-type(10) td {
+	border-bottom: 2px solid #333333;
+}
+
+#table_2 tr td:nth-of-type(2) {
+	border-left: 2px solid #333333;
+}
+
+#table_2 td {
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	border: 1px solid hsl(0, 0%, 20%);
+	background: rgb(176, 125, 77);
+}
+
+#table_2 tr:first-child td,
+#table_2 tr:last-child td {
+	height: 30px;
+	border-top: none;
+	border-bottom: none;
+}
+
+#table_2 tr td:first-child,
+#table_2 tr td:last-child {
+	width: 30px;
+	min-width: 30px;
+	border: none;
+}
+
+#table_2 tr:last-child td {
+	border: none;
+}
+
+#table_2 tr td:last-child {
+	border-bottom: 1px solid #333333;
+}
+
+#table_2 tr:last-child td:last-child {
+	border-top: 2px solid #333333;
+	border-bottom: none;
 }
 
 /*td.normal{
 	background: rgb(180, 142, 82);
 }*/
 
-.button{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 100px;
+.button {
+	position: absolute;
+	bottom: 13%;
+	left: 50%;
+	transform: translateX(-50%);
 }
-button{
-	margin-right: 100px
+
+button {
+	width: 50px;
+	height: 50px;
 }
+
+button:first-child {
+	margin-right: 100px;
+}
+
