@@ -16,8 +16,16 @@ tr.on('click', function (e) {
 		isDataChange = dataChange(rowIndex, colIndex);
 
 		// 검은돌 클릭시 좌 상 우 하		
+		// leftWhiteArry, topWhiteArry, rightWhiteArry, bottomWhiteArry
+		// 배열에 흰색 좌표 저장
 		black_search_allWthie(rowIndex, colIndex);
 		
+
+		// leftWhiteArry, topWhiteArry, rightWhiteArry, bottomWhiteArry
+		// 배열이 존재 할때 그 배열의 주변 빈칸 length 구함
+		// length 가 0일대 그 배열 삭제
+		whiteDelete();		
+
 
 		// 바둑판 그리기
 		makeBaduckPan();
