@@ -148,3 +148,42 @@ button:first-child {
 	margin-right: 100px;
 }
 
+
+.turn {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgb(97, 182, 182);
+	padding: 20px 82px;
+}
+
+.turn > div{
+	float: left;
+	width: 80px;
+	height: 80px;	
+}
+
+.turn > div:first-child {
+	margin-right: 100px;
+}
+
+.turn .black{
+	background: #000;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+.turn .black.on{
+	opacity: 1;
+}
+
+.turn .white{
+	background: #fff;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+.turn .white.on{
+	opacity: 1;
+}

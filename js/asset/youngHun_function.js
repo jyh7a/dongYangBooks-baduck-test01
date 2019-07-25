@@ -30,7 +30,7 @@ function returnUniqeLength(array) {
 // 원하는 숫자 랜덤하게 뽑기 처음은 원래배열을 썩는것이다. 피셔에이치 셔플
 // total: 총뽑을 개수 
 // option: 옵션붙으면 옵션개수만큼나옴
-  // 0붙이면 총뽑을개수 나옴
+// 0붙이면 총뽑을개수 나옴
 // fromZero: true면 0부터 false면 1부터
 function randomPull(total, optionLen, fromZero) {  
   optionLen ? optionLen = optionLen : optionLen = 0;
